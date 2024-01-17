@@ -1,0 +1,14 @@
+name:                pandoc-mailcap
+version:             0.1.0.0
+build-type:          Simple
+cabal-version:       >= 1.10
+
+Executable pandoc-mailcap
+  main-is:             pandoc-mailcap.hs
+  build-depends:       base == 4.*
+                     , data-default == 0.7.*
+                     , text == 2.*
+                     , bytestring == 0.11.*
+                     , pandoc == 3.1.*
+  Ghc-Options:   -rtsopts -with-rtsopts=-K128m -with-rtsopts=-M128m
+  Default-Language:    Haskell2010
